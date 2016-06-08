@@ -8,7 +8,7 @@ When working for a mid size company with little money to spend on tools, imaging
 At this time, Windows 7+ and PowerShell version 5.0+ are required to use some of the functions contained within this module. PSWindowsUpdate is also required but functions in this module will install it as needed from PowerShell Gallery.
 
 #Functions
-See Help for more details on each function is module.
+See Help for more details on each function in the module.
 
 Get-SupportStatus is a function that can be used in scripts to easily determine if a workstation is supported. This will prevent the script from running on workstation/server models that you no longer support. The SupportedModels provided should use the WMI Model name. After you run the function  you will get a global variable called $SupportStatus which will return $true or $false that you can use to validate against.
 - Syntax: Get-SupportStatus -SupportedModels "Model 1", "Model 2", "Model 3"
