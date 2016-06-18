@@ -16,6 +16,10 @@ Get-SupportStatus is a function that can be used in scripts to easily determine 
 Get-WorkstationType is a function that can be used to determine what type of system the script is running on. The idea here is to have this function determine which OU to use when joining the workstation to the domain. A global variable called OU is created with the correct OU for systemtype.
 - Syntax: Get-WorkstationType -Laptop "OU=Laptop,DC=Domain,DC=Local" -Desktop "OU=Desktop,DC=Domain,DC=Local" -Server "OU=Server,DC=Domain,DC=Local"
 
+Get-LastWinUpdate is a function used to get the date when Windows Updates were installed. This function is used to validate whether Windows Updates have already been installed or not. A global variable called "WUStatus" is created with $true or $false.
+- Syntax: Get-LastWinUpdate
+
+
 Get-Drivers is a function that allows you to download custom internal driver packs. Basically go to your manufatuer's web site and download their driver pack usually in either a .exe format or .cab format. Extract the drivers to flat files, make any changes or additions to the extracted files and then zip the files (recommended name for zip file would be WMI Model Name with all spaces replaced with "_", Example: HP_EliteBook_745_G2.zip). This function can then be used to download the files from an interally hosted website when needed for the build.
 - Syntax: Get-Drivers -BITSSource http//localserver/workstation -BITSDestination C:\Temp -ExtractDestination C:\Drivers -FileName $false
 
