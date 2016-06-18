@@ -25,9 +25,6 @@ Invoke-Process is a function used to kill explorer if running and to start explo
 Invoke-InstallDrivers is a function to install drivers. A variable in the function gets all of the class GUIDs of the hardware installed and then it parses through all of the inf driver setup files to see if the class GUID of the driver matches any installed hardware, if there is a match the driver is installed, if there is no matches the driver is skipped. This can be used with Get-Drivers to obtain drivers during process.
 - Syntax: Invoke-InstallDrivers -Source C:\SomePath
 
-Invoke-DomainJoin is a function that checks if the workstation is already a member of the domain, if it isn't the workstation is joined, if it is a verbose message is display. This can be used with Get-WorkstationType to get a value for OUPath.
-- Syntax: Invoke-DomainJoin -NewName NewPCName -DomainName test.local -OUPath $OU -Credential $Credentials
-
 Invoke-WindowsUpdates is a function that checks is the PSWindowsUpdate module is installed, if it is Windows Updates will be installed, if it isn't the module is installed and then Windows Updates will be installed.
 - Syntax: Invoke-WindowsUpdates -UpdateType <Update Type will Prefill>
 
