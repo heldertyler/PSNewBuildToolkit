@@ -10,8 +10,8 @@
         Used to specify a model or models that are supported within an environment
 		
     .EXAMPLE
-		Specify Specific Suppport Models (Name's Used Must Match the WMI Model):
-			Get-SupportStatus -SupportModels "HP EliteBook 745 G1", "HP EliteBook 745 G2", "HP EliteBook 745 G3"
+        Specify Specific Suppport Models (Name's Used Must Match the WMI Model):
+        	Get-SupportStatus -SupportModels "HP EliteBook 745 G1", "HP EliteBook 745 G2", "HP EliteBook 745 G3"
 #>
 
     [CmdletBinding()]
